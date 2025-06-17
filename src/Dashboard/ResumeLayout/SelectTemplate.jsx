@@ -2,12 +2,15 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useResume } from '../../context/ResumeContext';
 import TemplateOne from '../../assets/Template1.png';
+import TemplateTwo from '../../assets/Template2.jpeg';
 import TemplateThree from '../../assets/Template3.jpeg';
 
 import Header from '../../components/custom/Header';
 
+
 const templates = [
-  { id: 1, name: 'Modern', component: 'TemplateOne', image: TemplateOne },
+  { id: 1, name: 'Modern', component: 'TemplteOne', image: TemplateOne },
+   { id: 3, name: 'Classic', component: 'TemplateTwo', image: TemplateTwo },
   { id: 3, name: 'Creative', component: 'TemplateThree', image: TemplateThree },
 ];
 

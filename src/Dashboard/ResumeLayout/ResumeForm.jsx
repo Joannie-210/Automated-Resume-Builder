@@ -4,6 +4,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useResume } from '../../context/ResumeContext';
 import TemplateOne from '../Templates/TemplateOne';
+import TemplateTwo from "../Templates/TemplateTwo";
 import TemplateThree from "../Templates/TemplateThree";
 import { Button } from "@/components/ui/button";
 import { FaUserCircle, FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -153,6 +154,7 @@ const ResumeForm = () => {
   // Mapping template names to components
   const TemplateComponents = {
     TemplateOne,
+    TemplateTwo,
     TemplateThree
   };
   const SelectedTemplate = TemplateComponents[template]; // Chosen template component
